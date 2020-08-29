@@ -1,0 +1,22 @@
+{
+  "name": "my-bank-api",
+  "version": "1.0.0",
+  "description": "API em Node com Express feita para a disciplina de Desenvolvimento de APIs no MBA de Front-End pelo IGTI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayran/my-bank-api.git"
+  },
+  "author": "Kayran dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayran/my-bank-api/issues"
+  },
+  "homepage": "https://github.com/kayran/my-bank-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
