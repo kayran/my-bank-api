@@ -2,11 +2,14 @@
   "name": "my-bank-api",
   "version": "1.0.0",
   "description": "API em Node com Express feita para a disciplina de Desenvolvimento de APIs no MBA de Front-End pelo IGTI",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "deploy": "gcloud app deploy app.yaml --project having-209902"
+
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
     "@google-cloud/datastore": "^6.1.0",
     "express": "^4.17.1",
     "moment": "^2.28.0"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0"
   }
 }

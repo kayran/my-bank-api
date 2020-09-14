@@ -51,9 +51,6 @@ const accountWithdraw = async (req, res, next) => {
 const accountBalance = async (req, res, next) => {
 	try {
 		const {accountId} = req.params;
-		console.log(req.params)
-		console.log(accountId)
-		console.log(+accountId)
 		const account = await accounts.getAccount(+accountId)
 		res.send({status:200, data: {accountId, ...account}})
 		res.end()
